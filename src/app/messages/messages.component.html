@@ -1,0 +1,22 @@
+<!-- <table>
+  <thead>
+    <tr>
+      <th>Sender Name</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let message of messages">
+      <td>{{ message.sender_name }}</td>
+      <td>{{ message.message }}</td>
+    </tr>
+  </tbody>
+</table>
+ -->
+<!-- messages.component.html -->
+<div class="message-container">
+  <div class="message" *ngFor="let message of messages">
+    <div class="sender">{{ message.sender_name }}</div>
+    <div class="content">{{ message.message }}</div>
+  </div>
+</div>

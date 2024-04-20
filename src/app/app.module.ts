@@ -8,9 +8,10 @@ import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { ResetComponent } from './reset/reset.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, LoginComponent, ResetComponent],
+  declarations: [AppComponent, SignupComponent, LoginComponent, ResetComponent, MessagesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

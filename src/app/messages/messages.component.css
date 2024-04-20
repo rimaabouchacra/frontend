@@ -1,0 +1,30 @@
+/* /* messages.component.css */
+
+/* Container for messages */
+.message-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual message style */
+.message {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message:hover {
+  background-color: #ddd;
+}
+
+.sender {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.content {
+  color: #333;
+}
