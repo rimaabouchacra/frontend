@@ -1,0 +1,42 @@
+.sidebar {
+  height: 100%;
+  width: 450px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #161E79;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: white;
+  padding-left: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.title{
+  color: white;
+  margin: 20px;
+}
+.sidebar li {
+  padding: 10px 20px;
+  color: black;
+  cursor: pointer;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+
+}
+
+.sidebar li:hover {
+  background-color: #fdca11;
+}
+
+/* .ul-chat{
+  background-color: white;
+  color: black;
+} */

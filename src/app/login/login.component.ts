@@ -20,13 +20,24 @@ export class LoginComponent {
     };
 
     this.http
-      .post('http://localhost:8000/api/v1/auth/login', formData)
+      .post<any>('http://localhost:8000/api/v1/auth/login', formData)
       .subscribe(
         (response) => {
-          console.log('Login successful:', response);
-          this.email = '';
-          this.password = '';
-          this.errorMessage = '';
+          console.log('Login response:', response);
+          if (
+            response &&
+            response.authorisation &&
+            response.authorisation.token
+          ) {
+            // Save token to local storage
+            localStorage.setItem('token', response.authorisation.token);
+            // Clear input fields and error message
+            this.email = '';
+            this.password = '';
+            this.errorMessage = '';
+          } else {
+            console.error('Token not found in login response');
+          }
         },
         (error: HttpErrorResponse) => {
           console.error('Login failed:', error);
