@@ -1,0 +1,20 @@
+<form class="signup-form" (submit)="onSubmit()">
+  <div class="login-title">Signup</div>
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="name" name="name" required [(ngModel)]="username">
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required [(ngModel)]="email">
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="password">
+  </div>
+  <div class="links">
+    <a class="links" routerLink="/login">Already have an account? Login</a><br><br>
+  </div>
+  <button type="submit">Sign Up</button><br>
+  <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
+</form>

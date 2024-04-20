@@ -1,0 +1,19 @@
+<form class="signup-form" (submit)="onSubmit()">
+  <div class="login-title">Login</div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required [(ngModel)]="email">
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required [(ngModel)]="password">
+  </div>
+  <div class="links">
+    <a class="links" routerLink="/reset-password">Forgot Password?</a><br><br>
+    <a class="links" routerLink="/signup">Don't have an account? Signup</a><br><br>
+  </div>
+  <button type="submit">Login</button><br>
+  <div class="error" *ngIf="errorMessage">{{ errorMessage }}</div>
+</form>
+
+

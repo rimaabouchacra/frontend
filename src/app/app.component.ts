@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  // templateUrl: './signup/signup.component.html',
+  // styleUrls: ['./signup/signup.component.css'],
 })
 export class AppComponent {
   title = 'frontend';
