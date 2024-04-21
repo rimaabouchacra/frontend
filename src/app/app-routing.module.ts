@@ -7,7 +7,6 @@ import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
 import { AuthGuard } from './auth.guard';
 import { ConversationComponent } from './conversation/conversation.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },

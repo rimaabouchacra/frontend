@@ -1,12 +1,7 @@
-/* /* messages.component.css */
-
-/* Container for messages */
 .message-container {
   display: flex;
   flex-direction: column;
 }
-
-/* Individual message style */
 .message {
   background-color: #f2f2f2;
   padding: 10px;

@@ -12,7 +12,6 @@ import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { ConversationComponent } from './conversation/conversation.component';
-import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     ChatsComponent,
     HomepageComponent,
     ConversationComponent,
-    NavbarComponent,
   ],
   imports: [
     BrowserModule,
