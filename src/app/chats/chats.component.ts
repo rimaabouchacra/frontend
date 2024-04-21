@@ -42,6 +42,7 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-chats',
   templateUrl: './chats.component.html',
@@ -54,6 +55,20 @@ export class ChatsComponent {
 
   ngOnInit(): void {
     this.fetchChats();
+  }
+
+  logout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/']);
+  }
+  home() {
+    this.router.navigate(['/']);
+  }
+  login() {
+    this.router.navigate(['/login']);
+  }
+  signup() {
+    this.router.navigate(['/signup']);
   }
 
   fetchChats() {

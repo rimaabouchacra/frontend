@@ -1,40 +1,70 @@
 <div class="container">
-
   <div class="nav-header">
     <nav class="navbar">
-    <div class="logo">
-      <img class="logo" src="../../assets/chat-logo.png" alt="logo">
-    </div>
-    <ul class="nav-links">
-  <li><a routerLink="/">Home</a></li>
-  <li><a routerLink="/signup">Signup</a></li>
-  <li><a routerLink="/login">Login</a></li>
-</ul>
+      <div class="logo">
+        <img class="logo" src="../../assets/chat-logo.png" alt="logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a routerLink="/chat">Chat</a></li>
+        <li><a routerLink="/signup">Signup</a></li>
+        <li><a routerLink="/login">Login</a></li>
+      </ul>
+    </nav>
+    <br />
 
-  </nav><br>
-
-  <div class="header">
-    <div class="title">
-      <h1 class="title1">Welcome to ChatAPP!</h1>
-      <p class="text">
-        Welcome to our chat app! Stay connected with friends, family, and
-        colleagues <br />
-        through seamless messaging. Whether you're sharing updates, planning
-        events,<br />
-        or simply catching up, our platform provides a secure and intuitive way
-        to communicate.
-      </p>
-      <button>Get Started</button>
+    <div class="header">
+      <div class="title">
+        <h1 class="title1">Welcome to ChatAPP!</h1>
+        <p class="text">
+          Welcome to our chat app! Stay connected with friends, family, and
+          colleagues <br />
+          through seamless messaging. Whether you're sharing updates, planning
+          events,<br />
+          or simply catching up, our platform provides a secure and intuitive
+          way to communicate.
+        </p>
+        <button (click)="redirectToLogin()">Get Started</button>
+      </div>
+      <img
+        src="https://previews.123rf.com/images/rawpixel/rawpixel1512/rawpixel151207103/49274653-chat-chatting-online-messaging-technology-concept.jpg"
+        alt="Header Image 3"
+      />
     </div>
-    <img
-      src="https://previews.123rf.com/images/rawpixel/rawpixel1512/rawpixel151207103/49274653-chat-chatting-online-messaging-technology-concept.jpg"
-      alt="Header Image 3"
-    />
-  </div><br><br>
+    <br /><br />
   </div>
 
-
+  <div>
+  <h1 class="features-title">Platform Features</h1>
+  <div class="features-container">
+    <div class="feature">
+      <img class="feature-img" src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/chat-list-icon.png" alt="list" />
+      <p class="title2">Chat Listing</p>
+      <p class="text1">
+        View a list of all your ongoing chats, including the sender or <br>
+        recipient's name, the last message sent, and the message count. Easily <br>
+        navigate to individual conversations for more details.
+      </p>
+    </div>
+    <div class="feature">
+      <img class="feature-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFPqw_IHPG2r_2Yj6R1Bgn65DPYcIbO59OEWtrTqgLXa84gb2TGqC1dm9IQMGQn6xVpLE&usqp=CAU" alt="conversation" />
+      <p class="title2">Chat Conversation</p>
+      <p class="text1">
+        Dive into detailed conversations with your contacts. View the entire <br>
+        chat history, send messages, and see timestamps for each message. Stay <br>
+        connected and engaged with smooth and intuitive messaging features.
+      </p>
+    </div>
+  </div>
+</div>
 </div>
 
-
-
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2024 ChatAPP. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>

@@ -1,6 +1,9 @@
 <div class="area">
   <div class="sidebar">
     <div class="chat-container">
+      <div>
+        <button (click)="logout()">Logout</button><br>
+      </div>
       <h1 class="title">Chats</h1>
       <a *ngFor="let chat of chats" [routerLink]="['/conversation', chat.id, { senderName: chat.sender_name }]" class="chat-link" (click)="resetMessageCount(chat)">
         <ul class="ul-chat">
@@ -15,7 +18,10 @@
         </ul>
       </a>
     </div>
+
+
   </div>
+
 
   <ul class="circles">
     <li>
