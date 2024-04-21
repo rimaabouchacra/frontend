@@ -216,11 +216,21 @@ body{
   padding: 0;
 }
 
+.sidebar li:hover {
+  background-color: #f3f3f3;
+}
+
 .title{
   color: black;
   margin: 20px;
   padding-top: 20px;
   font-size: 60px;
+}
+
+.chat-link {
+  display: inline-block !important;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .sidebar li {

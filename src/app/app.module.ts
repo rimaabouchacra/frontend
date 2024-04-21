@@ -11,6 +11,7 @@ import { ResetComponent } from './reset/reset.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { ConversationComponent } from './conversation/conversation.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     MessagesComponent,
     ChatsComponent,
     HomepageComponent,
+    ConversationComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

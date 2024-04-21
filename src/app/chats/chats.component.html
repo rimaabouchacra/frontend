@@ -2,45 +2,57 @@
   <div class="sidebar">
     <div class="chat-container">
       <h1 class="title">Chats</h1>
-      <ul class="ul-chat">
-        <li *ngFor="let chat of chats" class="chat-item">
-          <span>{{ chat.sender_name }}:</span>
-          <span>{{ chat.last_message }}</span>
-          <span class="date">{{ chat.created_at | date : "yyyy-MM-dd" }}</span>
-          <div class="message-count">{{ chat.message_count }}</div>
-        </li>
-      </ul>
+      <a
+        *ngFor="let chat of chats"
+        [routerLink]="[
+          '/conversation',
+          chat.id,
+          { senderName: chat.sender_name }
+        ]"
+        class="chat-link"
+      >
+        <ul class="ul-chat">
+          <li class="chat-item">
+            <span>{{ chat.sender_name }}:</span>
+            <span>{{ chat.last_message }}</span>
+            <span class="date">{{
+              chat.created_at | date : "yyyy-MM-dd"
+            }}</span>
+            <div class="message-count">{{ chat.message_count }}</div>
+          </li>
+        </ul>
+      </a>
     </div>
   </div>
 
   <ul class="circles">
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
     <li>
-      <img class="logo" src="../../assets/chat-logo.png" alt="">
+      <img class="logo" src="../../assets/chat-logo.png" alt="" />
     </li>
-    <li><img class="logo" src="../../assets/chat-logo.png" alt=""></li>
+    <li><img class="logo" src="../../assets/chat-logo.png" alt="" /></li>
   </ul>
 </div>

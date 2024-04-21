@@ -7,6 +7,7 @@ import { ResetComponent } from './reset/reset.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
 import { AuthGuard } from './auth.guard';
+import { ConversationComponent } from './conversation/conversation.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,11 @@ const routes: Routes = [
   { path: 'reset', component: ResetComponent },
   { path: 'message', component: MessagesComponent },
   { path: 'chat', component: ChatsComponent, canActivate: [AuthGuard] },
+  {
+    path: 'conversation/:chatId',
+    component: ConversationComponent,
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({
