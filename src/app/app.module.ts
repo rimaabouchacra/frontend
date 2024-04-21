@@ -10,15 +10,19 @@ import { LoginComponent } from './login/login.component';
 import { ResetComponent } from './reset/reset.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
-  declarations: [AppComponent, SignupComponent, LoginComponent, ResetComponent, MessagesComponent, ChatsComponent],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
+  declarations: [
+    AppComponent,
+    SignupComponent,
+    LoginComponent,
+    ResetComponent,
+    MessagesComponent,
+    ChatsComponent,
+    HomepageComponent,
   ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

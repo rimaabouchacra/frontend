@@ -6,14 +6,16 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ResetComponent } from './reset/reset.component';
 import { MessagesComponent } from './messages/messages.component';
 import { ChatsComponent } from './chats/chats.component';
+import { AuthGuard } from './auth.guard';
+
 
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: '', component: HomepageComponent },
-  { path: 'reset', component: ResetComponent},
-  { path: 'message', component: MessagesComponent},
-  { path: 'chat', component: ChatsComponent},
+  { path: 'reset', component: ResetComponent },
+  { path: 'message', component: MessagesComponent },
+  { path: 'chat', component: ChatsComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
@@ -21,9 +23,3 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/

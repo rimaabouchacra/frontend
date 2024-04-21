@@ -31,6 +31,7 @@ export class LoginComponent {
           ) {
             // Save token to local storage
             localStorage.setItem('token', response.authorisation.token);
+            window.location.href = '/chat';
             // Clear input fields and error message
             this.email = '';
             this.password = '';
