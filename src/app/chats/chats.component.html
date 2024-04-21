@@ -2,15 +2,7 @@
   <div class="sidebar">
     <div class="chat-container">
       <h1 class="title">Chats</h1>
-      <a
-        *ngFor="let chat of chats"
-        [routerLink]="[
-          '/conversation',
-          chat.id,
-          { senderName: chat.sender_name }
-        ]"
-        class="chat-link"
-      >
+      <a *ngFor="let chat of chats" [routerLink]="['/conversation', chat.id, { senderName: chat.sender_name }]" class="chat-link" (click)="resetMessageCount(chat)">
         <ul class="ul-chat">
           <li class="chat-item">
             <span>{{ chat.sender_name }}:</span>
